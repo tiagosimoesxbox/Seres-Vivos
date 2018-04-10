@@ -24,12 +24,18 @@
     <ClCompile Include="Ser.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="Planta.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ser.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="Headers.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Planta.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
