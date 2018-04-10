@@ -3,10 +3,12 @@
 void UI::interaccao()
 {
 	int opcao;
-	cout << endl;
+	cout << endl << endl;
+	cout << "---------- SERES VIVOS -----------" << endl;
 	cout << "(1) - Inserir planta" << endl;
 	cout << "(2) - Inserir animal" << endl;
-	cout << "(0) - Todos os seres" << endl << endl << "> ";
+	cout << "(0) - Todos os seres" << endl;
+	cout << "----------------------------------" << endl << endl << "> ";
 	cin >> opcao;
 
 	if (opcao == 0)
