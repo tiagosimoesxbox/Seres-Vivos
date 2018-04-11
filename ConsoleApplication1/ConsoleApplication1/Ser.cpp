@@ -1,6 +1,7 @@
 #include "Ser.h"
 
-Ser::Ser(string nome) : nome(nome) {}
+Ser::Ser(string nome) : nome(nome), som("") {}
+Ser::Ser(string nome, string som) : nome(nome), som(som) {}
 
 string Ser::getNome()
 {

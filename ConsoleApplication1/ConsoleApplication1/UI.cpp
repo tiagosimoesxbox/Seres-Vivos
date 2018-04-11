@@ -1,31 +1,47 @@
 #include "UI.h"
+#include "Fungos.h"
 
-void UI::interaccao()
+bool UI::interaccao()
 {
 	int opcao;
 	cout << endl << endl;
 	cout << "---------- SERES VIVOS -----------" << endl;
 	cout << "(1) - Inserir planta" << endl;
 	cout << "(2) - Inserir animal" << endl;
-	// linha nova cout << "(3) - Inserir fungo"
+	cout << "(3) - Inserir fungo" << endl;
 	cout << "(0) - Todos os seres" << endl;
+	cout << "(-1) - SAIR" << endl;
 	cout << "----------------------------------" << endl << endl << "> ";
 	cin >> opcao;
 
-	if (opcao == 0)
-		mostraTodos();
-	else if (opcao == 1)
-		inserirPlanta();
-	else
-		inserirAnimal();
+	switch (opcao) {
+		case -1:
+			return true;
+			break;
+		case 0:
+			mostraTodos();
+			break;
+		case 1:
+			inserirPlanta();
+			break;
+		case 2:
+			inserirAnimal();
+			break;
+		case 3:
+			inserirFungo();
+			break;
+		default:
+			break;
+	}
+	return false;
 }
 
-/*
+
 void UI::inserirFungo() {
 	string nome = "FUNGO " + to_string(FUNGO++);
-	seres->push_back(new Fungo(nome, "Amanita"));
+	seres->push_back(new Fungos(nome));
 }
-*/
+
 
 void UI::mostraTodos() {
 	int i = 0;
@@ -47,6 +63,7 @@ void UI::inserirAnimal()
 
 int UI::PLANTA = 0;
 int UI::ANIMAL = 0;
+int UI::FUNGO = 0;
 UI::UI()
 {
 	seres = new vector<Ser *>();
@@ -67,6 +84,7 @@ UI::~UI()
 void UI::start()
 {
 	while (1) {
-		interaccao();
+		if (interaccao())
+			break;
 	}
 }

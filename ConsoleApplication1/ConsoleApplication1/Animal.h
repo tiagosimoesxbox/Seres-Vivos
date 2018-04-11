@@ -8,8 +8,6 @@ public:
 	Animal(string nome, int peso, string som);
 	int getPeso();
 	void setPeso(int peso);
-
-	string getSom();
 	string toString();
 };
 

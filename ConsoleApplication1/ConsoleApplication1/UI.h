@@ -4,12 +4,12 @@
 
 class UI {
 	vector<Ser *> *seres;
-	static int PLANTA;
-	static int ANIMAL;
-	void interaccao();
+	static int PLANTA, ANIMAL, FUNGO;
+	bool interaccao();
 	void mostraTodos();
 	void inserirPlanta();
 	void inserirAnimal();
+	void inserirFungo();
 public:
 	UI();
 	~UI();

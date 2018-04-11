@@ -3,5 +3,5 @@
 class Fungos : public Ser {
 public:
 	Fungos(string nome);
-	virtual string toString() = 0;
+	virtual string toString();
 };

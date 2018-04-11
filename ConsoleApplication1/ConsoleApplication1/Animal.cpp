@@ -1,8 +1,7 @@
 #include "Animal.h"
 
-Animal::Animal(string nome, int peso, string som) : Ser(nome) {
+Animal::Animal(string nome, int peso, string som) : Ser(nome, som) {
 	this->peso = peso;
-	this->som = som;
 }
 
 int Animal::getPeso() {
@@ -11,10 +10,6 @@ int Animal::getPeso() {
 
 void Animal::setPeso(int peso) {
 	this->peso = peso;
-}
-
-string Animal::getSom() {
-	return som;
 }
 
 string Animal::toString() {
