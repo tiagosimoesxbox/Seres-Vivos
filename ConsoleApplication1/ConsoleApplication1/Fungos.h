@@ -1,10 +1,7 @@
 #pragma once
 #include "Ser.h"
-class Fungos :
-	public Ser
-{
+class Fungos : public Ser {
 public:
-	Fungos();
-	~Fungos();
+	Fungos(string nome);
+	virtual string toString() = 0;
 };
-
