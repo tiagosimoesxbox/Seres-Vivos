@@ -7,6 +7,7 @@ void UI::interaccao()
 	cout << "---------- SERES VIVOS -----------" << endl;
 	cout << "(1) - Inserir planta" << endl;
 	cout << "(2) - Inserir animal" << endl;
+	// linha nova cout << "(3) - Inserir fungo"
 	cout << "(0) - Todos os seres" << endl;
 	cout << "----------------------------------" << endl << endl << "> ";
 	cin >> opcao;
@@ -18,6 +19,13 @@ void UI::interaccao()
 	else
 		inserirAnimal();
 }
+
+/*
+void UI::inserirFungo() {
+	string nome = "FUNGO " + to_string(FUNGO++);
+	seres->push_back(new Fungo(nome, "Amanita"));
+}
+*/
 
 void UI::mostraTodos() {
 	int i = 0;
