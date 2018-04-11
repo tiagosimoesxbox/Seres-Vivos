@@ -1,12 +1,7 @@
 #include "Fungos.h"
 
+Fungos::Fungos(string nome) : Ser(nome) {}
 
-
-Fungos::Fungos() : Ser()
-{
-}
-
-
-Fungos::~Fungos()
-{
+virtual string Fungos::toString() {
+	return this->nome;	
 }
